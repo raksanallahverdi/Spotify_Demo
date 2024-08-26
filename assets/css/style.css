@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cards{
+    height: fit-content;
+    margin-bottom: 70px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+#cards #title{
+   text-align: center;
+   color:  rgb(5, 96, 5);
+   margin: 24px 0 37px 0;
+
+}
+ #cards .container .row{
+    display: flex;
+    column-gap: 30px;
+    row-gap: 67px;
+    width:100%;  
+    flex-wrap: wrap;
+
+ }
+  html {
+    scrollbar-color: rgb(18, 239, 125) white;
+    scrollbar-width: auto;
+    scroll-behavior: smooth;
+  }
+ #cards .container .row .card{
+    box-shadow: rgba(70, 139, 97, 0.5) 5px 5px, rgba(70, 139, 97, 0.3) 10px 10px, rgba(70, 139, 97, 0.1) 15px 15px, rgba(70, 139, 97, 0.05) 20px 20px;
+    gap: 10px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - 90px)/4);
+ }
+
+ #cards .container .row .card .img-wrapper{
+   width: 100%;
+   height: 200px;
+   border: 1px solid green;
+ }
+ #cards .container .row .card .img-wrapper img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 25%;
+
+ }
+ #cards .container .row .card audio{
+    width: 95%;
+    height: 45px;
+ }
+ .card .image{
+    display: block;
+    width: 100px;  
+    height: 120px;
+    padding: 10px 0 13px 0;
+}
+ .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;            
+}
+
+.card .image img:hover{
+    animation: rotate 2s linear 100ms infinite normal forwards ;
+  
+}
+
+@keyframes rotate{
+    from{ transform: rotate(0);}
+    to{
+       transform: rotate(360deg); 
+    }
+}
+.card h3{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: bold;
+    padding-top: 13px;
+}
+.card h4{
+    font-family: "Qwitcher Grypen", cursive;
+    font-style: italic;
+}
+#cards .container .row .card:hover{
+    transform: scale(1.06);
+    transition: 0.27s;
+    cursor: pointer;
+}
+
+/* About Section */
+
+#about{
+    background-image: url(../images/749b01c4-e1d4-4f9a-a40c-1f9889c95441.jpg);
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right top;
+   
+}
+#about #about-us{
+    text-shadow: 1px 0 #fff, 0px 0 #fff, 0 1px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    position: relative;
+    padding-top: 20px;
+    color: rgb(24,216,96);
+    text-align: center;
+    font-size: 66px;
+    
+    
+}
+#about p{
+    text-shadow: 0px 0 rgb(24,216,96), 0px 0 rgb(24,216,96), 0 0px rgb(24,216,96), 0 0px rgb(24,216,96),
+    1px 1px rgb(24,216,96), 0px 0px rgb(24,216,96), 1px 0px rgb(24,216,96), 0px 0px rgb(24,216,96);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+hr{
+  
+    top: 170px;
+    left: 49.5%;
+    height: 6px;
+    color: rgb(208,125,202);
+    background-color: rgb(138, 39, 132);
+    border-radius: 20px;
+    transform: rotate(110deg);
+    width: 210px;
+    position: absolute;
+}
