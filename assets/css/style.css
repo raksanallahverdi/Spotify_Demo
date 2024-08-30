@@ -143,3 +143,42 @@ hr{
     width: 210px;
     position: absolute;
 }
+.contactForm {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(76, 155, 84);
+    padding: 25px;
+    border: 1px solid rgb(161, 120, 120);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.contactForm:hover{
+    box-shadow: rgba(51, 51, 107, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+
+}
+.form-wrapper{
+    margin:30px auto  0 auto;
+
+}
+.contactForm input{
+width: 180px;
+height: 30px;
+}
+.contactForm label{
+    font-size: 20px;
+}
+.contactForm textarea{
+    height: 60px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.contactForm button{
+    height: 33px;
+    border-radius: 8px;
+    background-color: rgb(238, 250, 215);
+}
